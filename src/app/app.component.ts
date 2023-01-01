@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
+  standalone : true,
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template :  `<p>app works</p> `,
 })
 export class AppComponent {
   title = 'echarts-example';
