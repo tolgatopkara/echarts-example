@@ -5,11 +5,13 @@ import { AppComponent } from './app/app.component';
 
 
 
+
 bootstrapApplication(AppComponent,
   {
     providers: [
     provideAnimations(),
-    importProvidersFrom(BrowserAnimationsModule,BrowserModule)
+    importProvidersFrom(BrowserAnimationsModule,BrowserModule),
+
 
 ]
   }).catch((err) => console.log(err)
