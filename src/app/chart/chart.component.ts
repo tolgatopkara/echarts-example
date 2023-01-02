@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { EChartsOption } from 'echarts';
-import * as echarts from 'echarts';
 
 @Component({
   standalone : true,
@@ -10,6 +9,9 @@ import * as echarts from 'echarts';
   imports: [  NgxEchartsModule    ],
 })
 export class ChartComponent  {
+
+  //Ngx Echarts does not support Angular 15 standalone mode yet
+
 
   option : EChartsOption = {
     legend: {
